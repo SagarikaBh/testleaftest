@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuit" parallel="none" thread-count="5" verbose="5">
+<test name="test group execution" preserve-order="true">
+
+<groups>
+<define name="siku">
+<include name="banana" />
+<include name="pinaple"/>
+
+</define>
+<run>
+<include name="siku"></include>
+</run>
+</groups>
+
+<classes>
+<class name="practiceselenium.GroupExecution">
+</class>
+</classes>
+</test>
+</suite>

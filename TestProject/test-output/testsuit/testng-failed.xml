@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [testsuit]">
+  <test thread-count="5" verbose="5" name="test group execution(failed)">
+    <classes>
+      <class name="practiceselenium.PracticeAssertReporters">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="ActualArray"/>
+        </methods>
+      </class> <!-- practiceselenium.PracticeAssertReporters -->
+      <class name="practiceselenium.DataProviderInOneClass">
+        <methods>
+          <include name="launchApp"/>
+          <include name="runCreateLead"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- practiceselenium.DataProviderInOneClass -->
+      <class name="practiceselenium.IrctcAutomation">
+        <methods>
+          <include name="loginIrctc"/>
+        </methods>
+      </class> <!-- practiceselenium.IrctcAutomation -->
+      <class name="practiceselenium.DropDownWithoutSelectClass">
+        <methods>
+          <include name="usingAction"/>
+        </methods>
+      </class> <!-- practiceselenium.DropDownWithoutSelectClass -->
+      <class name="practiceselenium.IrctcPages">
+        <methods>
+          <include name="loginIrctc"/>
+        </methods>
+      </class> <!-- practiceselenium.IrctcPages -->
+    </classes>
+  </test> <!-- test group execution(failed) -->
+</suite> <!-- Failed suite [testsuit] -->
